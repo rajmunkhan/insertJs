@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="plugin" group="content" method="upgrade">
+	<name>Content - InsertJs</name>
+	<author>Raaj</author>
+	<creationDate>April 2022</creationDate>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>Inject JavaScript</description>
+	<files>
+		<filename plugin="insertjs">insertjs.php</filename>
+	</files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- <field name="mytextvalue" type="text" default="Some text" label="Enter some text" description="" size="10" /> -->
+				<field name="mytextarea" type="textarea" default="default" label="Enter some html" description="" rows="10" cols="5" filter="raw"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
